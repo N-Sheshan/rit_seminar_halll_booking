@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="samplefromstyle.css">
 </head>
 <body>
  
@@ -25,19 +26,19 @@
 
   <ul class="nav flex-column bg-white mb-0">
     <li class="nav-item">
-      <a href="#" class="nav-link text-dark bg-light">
+      <a href="saminarholl.html" class="nav-link text-dark bg-light">
                 <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
                 Home
             </a>
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link text-dark">
+      <a href="index.html" class="nav-link text-dark">
                 <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
                 Seminar Hall Booking
             </a>
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link text-dark">
+      <a href="hallavailability.html" class="nav-link text-dark">
                 <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
                 Hall Availability Checking
             </a>
@@ -85,42 +86,67 @@
 <!-- Page content holder -->
 <div class="page-content p-5" id="content">
   <!-- Toggle button -->
-  <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
-
+  <div class="sidebarCollapse">
+  <button id="sidebarCollapse" type="button" class="btn btn-light  rounded-pill shadow-sm px-4 "><i  class="fa fa-bars mr-2 toggleicon"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
+</div>
   <!-- Demo content -->
-  <h2 class="display-4 ">Seminiar Hall Availability Checking</h2>
-  <p class="lead  mb-0">Build a fixed sidebar using Bootstrap 4 vertical navigation and media objects.</p> 
-  <div class="separator"></div>
-  <div class="row ">
-    <div class="col-lg-7">
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor.
-      </p> 
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor.
-      </p>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor.
-      </p>
-    </div>
-    <div class="col-lg-5">
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor.
-      </p>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor.
-      </p>
-    </div>
-  </div>
+  <h2 class="display-5 ">Hall Availability Checking</h2>
 
+  <div class="row ">
+  <div class="container">
+    <header>Checking Form</header>
+
+    <form action="#">
+        <div class="form first">
+            <div class="details personal">
+                <span class="title">Filtering Details</span>
+
+                <div class="fields">
+                  <div class="availability-input-field">
+                    <label>Seminar Hall</label>
+                    <select required>
+                        <option disabled selected hidden>Select Hall</option>
+                        <option>Big Seminar Hall</option>
+                        <option>Mech Seminar Hall</option>
+                        <option>Civil Seminar Hall</option>
+                        <option value="">CSE Seminar Hall</option>
+                        <option value="">EEE Seminar Hall</option>
+                        <option value="">ECE Seminar Hall</option>
+                    </select>
+                </div>
+
+                    <div class="availability-input-field">
+                        <label>From Date</label>
+                        <input type="date" placeholder="Enter birth date" required>
+                    </div>
+                    <div class="availability-input-field">
+                      <label>TO Date</label>
+                      <input type="date" placeholder="Enter birth date" required>
+                  </div>
+
+                    <div class="availability-input-field">
+                        <label>Session</label>
+                        <select required>
+                            <option disabled selected hidden>Select Session</option>
+                            <option>FN</option>
+                            <option>AN</option>
+                            <option>FULL</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="details ID">
+                <button class="nextBtn">
+                    <span class="btnText">Next</span>
+                    <i class="uil uil-navigator"></i>
+                </button>
+            </div> 
+        </div>
+    </form>
+</div>
+</div>
 </div>
 <!-- End demo content -->
 
@@ -130,4 +156,5 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 

@@ -7,13 +7,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 .container{
     position: relative;
-    max-width: 900px;
     width: 100%;
     border-radius: 6px;
     padding: 30px;
-    margin: 0 15px;
+    /* margin: 0 15px; */
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
@@ -36,7 +36,7 @@
 .container form{
     position: relative;
     margin-top: 16px;
-    min-height: 490px;
+    min-height: 510px;
     background-color: #fff;
     overflow: hidden;
 }
@@ -74,18 +74,27 @@ form.secActive .form.first{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-form .fields .input-field{
+form .fields .input-field,form .fields .availability-input-field{
     display: flex;
-    width: calc(100% / 3 - 15px);
     flex-direction: column;
     margin: 4px 0;
 }
-.input-field label{
+form .fields .availability-input-field{
+    width: calc(100% / 4 - 15px);
+}
+form .fields .input-field{
+    width: calc(100% / 3 - 15px);
+}
+.input-field label,.availability-input-field label{
     font-size: 12px;
     font-weight: 500;
     color: #2e2e2e;
 }
-.input-field input, select{
+.input-field input,
+.input-field select,
+.availability-input-field select,
+.availability-input-field input {
+    /* Styles shared by input and select elements within .input-field and .availability-input-field */
     outline: none;
     font-size: 14px;
     font-weight: 400;
@@ -96,15 +105,20 @@ form .fields .input-field{
     height: 42px;
     margin: 8px 0;
 }
+
 .input-field input :focus,
-.input-field select:focus{
+.input-field select:focus,.availability-input-field input :focus,
+.availability-input-field select:focus
+{
     box-shadow: 0 3px 6px rgba(0,0,0,0.13);
 }
 .input-field select,
-.input-field input[type="date"]{
+.input-field input[type="date"],
+.availability-input-field select,
+.availability-input-field input[type="date"]{
     color: #707070;
 }
-.input-field input[type="date"]:valid{
+.input-field input[type="date"]:valid,.availability-input-field input[type="date"]:valid{
     color: #333;
 }
 .container form button, .backBtn{
@@ -152,13 +166,13 @@ form .buttons button , .backBtn{
     .container form::-webkit-scrollbar{
        display: none;
     }
-    form .fields .input-field{
+    form .fields .input-field,.availability-input-field{
         width: calc(100% / 2 - 15px);
     }
 }
 
 @media (max-width: 550px) {
-    form .fields .input-field{
+    form .fields .input-field,.availability-input-field{
         width: 100%;
     }
 }
