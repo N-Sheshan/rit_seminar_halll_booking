@@ -38,17 +38,24 @@
             </a>
     </li>
     <li class="nav-item">
-      <a href="samplefrom.html" class="nav-link text-dark">
+      <a href="hallavailability.html" class="nav-link text-dark">
                 <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
                 Hall Availability Checking
             </a>
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link text-dark">
+      <a href="Proff_upload.html" class="nav-link text-dark">
                 <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
-                Professor Uploading
+                Proof Uploading
             </a>
     </li>
+    <li class="nav-item">
+        <a href="history.html" class="nav-link text-dark">
+                  <i class="fa fa-solid fa-table mr-3 text-primary fa-fw"></i>
+                  
+                  History
+              </a>
+      </li>
   </ul>
 
   <!-- <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
@@ -90,90 +97,33 @@
   <button id="sidebarCollapse" type="button" class="btn btn-light  rounded-pill shadow-sm px-4 "><i  class="fa fa-bars mr-2 toggleicon"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
 </div>
   <!-- Demo content -->
-  <h2 class="display-5 ">Seminar Hall Booking</h2>
+  <h2 class="display-5 " style="margin-bottom: .9rem;">Proof Uploading</h2>
 
   <div class="row ">
   <div class="container">
-    <header>Registration</header>
+    <header>Uploading Form</header>
 
     <form action="#">
         <div class="form first">
             <div class="details personal">
-                <span class="title">Personal Details</span>
+                <!-- <span class="title">Filtering Details</span> -->
 
                 <div class="fields">
-                    <div class="input-field">
-                        <label>Full Name</label>
-                        <input type="text" placeholder="Enter your name" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Date of Birth</label>
-                        <input type="date" placeholder="Enter birth date" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Email</label>
-                        <input type="text" placeholder="Enter your email" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Mobile Number</label>
-                        <input type="number" placeholder="Enter mobile number" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Gender</label>
-                        <select required>
-                            <option disabled selected>Select gender</option>
-                            <option>Male</option>
-                            <option>Female</option>
-                            <option>Others</option>
-                        </select>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Occupation</label>
-                        <input type="text" placeholder="Enter your ccupation" required>
+                    <div class="availability-input-field">
+                        <label>Booked ID</label>
+                        <input type="text" placeholder="Enter birth date" required>
                     </div>
                 </div>
             </div>
+            <div class="file_upload availability-input-field">
+                <label for="file" >Upload Proff <span>only .pdf</span></label>
+                <label for="file" class="Upload-lable" id="fileUploadLabel">Upload File</label>
+                <input type="file" accept=".pdf" required id="file">
+                <p id="filename"></p>
+                <div id="pdfPreview"></div>
+            </div>
 
             <div class="details ID">
-                <span class="title">Identity Details</span>
-
-                <div class="fields">
-                    <div class="input-field">
-                        <label>ID Type</label>
-                        <input type="text" placeholder="Enter ID type" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>ID Number</label>
-                        <input type="number" placeholder="Enter ID number" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Issued Authority</label>
-                        <input type="text" placeholder="Enter issued authority" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Issued State</label>
-                        <input type="text" placeholder="Enter issued state" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Issued Date</label>
-                        <input type="date" placeholder="Enter your issued date" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Expiry Date</label>
-                        <input type="date" placeholder="Enter expiry date" required>
-                    </div>
-                </div>
-
                 <button class="nextBtn">
                     <span class="btnText">Next</span>
                     <i class="uil uil-navigator"></i>
@@ -192,4 +142,5 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 

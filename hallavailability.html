@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="samplefromstyle.css">
+    <link rel="stylesheet" href="sample.css">
 </head>
 <body>
  
@@ -44,41 +45,20 @@
             </a>
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link text-dark">
+      <a href="Proff_upload.html" class="nav-link text-dark">
                 <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
-                Professor Uploading
+                Proof Uploading
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="history.html" class="nav-link text-dark">
+                <i class="fa fa-solid fa-table mr-3 text-primary fa-fw"></i>
+                
+                History
             </a>
     </li>
   </ul>
 
-  <!-- <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
-
-  <ul class="nav flex-column bg-white mb-0">
-    <li class="nav-item">
-      <a href="#" class="nav-link text-dark">
-                <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
-                area charts
-            </a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link text-dark">
-                <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
-                bar charts
-            </a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link text-dark">
-                <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
-                pie charts
-            </a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link text-dark">
-                <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
-                line charts
-            </a>
-    </li>
-  </ul> -->
 </div>
 <!-- End vertical navbar -->
 
@@ -90,7 +70,7 @@
   <button id="sidebarCollapse" type="button" class="btn btn-light  rounded-pill shadow-sm px-4 "><i  class="fa fa-bars mr-2 toggleicon"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
 </div>
   <!-- Demo content -->
-  <h2 class="display-5 ">Hall Availability Checking</h2>
+  <h2 class="display-5 " style="margin-bottom: .9rem;">Hall Availability Checking</h2>
 
   <div class="row ">
   <div class="container">
@@ -136,18 +116,61 @@
 
                 </div>
             </div>
-
+            
+            
             <div class="details ID">
                 <button class="nextBtn">
-                    <span class="btnText">Next</span>
+                    <span class="btnText">Check</span>
                     <i class="uil uil-navigator"></i>
                 </button>
             </div> 
         </div>
     </form>
+<hr>
+
+    <form action=""style="display: block;">
+      <header>Booked Details</header>
+      <br>
+    <div class="details ID ">
+      
+  
+      <div class="fields">
+          <div class="input-field">
+              <label>ID Type:</label>
+              <span id="idType"></span> <!-- Display ID Type here -->
+          </div>
+  
+          <div class="input-field">
+              <label>ID Number:</label>
+              <span id="idNumber"></span> <!-- Display ID Number here -->
+          </div>
+  
+          <div class="input-field">
+              <label>Issued Authority:</label>
+              <span id="issuedAuthority"></span> <!-- Display Issued Authority here -->
+          </div>
+  
+          <div class="input-field">
+              <label>Issued State:</label>
+              <span id="issuedState"></span> <!-- Display Issued State here -->
+          </div>
+  
+          <div class="input-field">
+              <label>Issued Date:</label>
+              <span id="issuedDate"></span> <!-- Display Issued Date here -->
+          </div>
+  
+          <div class="input-field">
+              <label>Expiry Date:</label>
+              <span id="expiryDate"></span> <!-- Display Expiry Date here -->
+          </div>
+      </div>
+  </div>
+</form>
 </div>
 </div>
 </div>
+
 <!-- End demo content -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

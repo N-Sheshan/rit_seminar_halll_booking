@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 4 Sidebar Menu Responsive with Sub menu  Create Responsive Side Navigation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="samplefromstyle.css">
+    <link rel="stylesheet" href="tablestyle.css">
+</head>
+<body>
+ 
+<!-- Vertical navbar -->
+<div class="vertical-nav bg-white" id="sidebar">
+  <div class="py-4 px-3 mb-4 bg-light">
+    <div class="media d-flex align-items-center">
+      <img decoding="async" src="images/p-1.png" alt="..." width="80" height="80" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+      <div class="media-body">
+        <h4 class="m-0">DEPARTEMENT</h4>
+        <p class="font-weight-normal text-muted mb-0">Seminar Hall</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Dashboard</p>
+
+  <ul class="nav flex-column bg-white mb-0">
+    <li class="nav-item">
+      <a href="saminarholl.html" class="nav-link text-dark bg-light">
+                <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+                Home
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="index.html" class="nav-link text-dark">
+                <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+                Seminar Hall Booking
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="hallavailability.html" class="nav-link text-dark">
+                <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+                Hall Availability Checking
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="Proff_upload.html" class="nav-link text-dark">
+                <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
+                Proof Uploading
+            </a>
+    </li>
+    <li class="nav-item">
+        <a href="history.html" class="nav-link text-dark">
+                  <i class="fa fa-solid fa-table mr-3 text-primary fa-fw"></i>
+                  History
+              </a>
+      </li>
+  </ul>
+
+</div>
+<!-- End vertical navbar -->
+
+
+<!-- Page content holder -->
+<div class="page-content p-5" id="content">
+  <!-- Toggle button -->
+  <div class="sidebarCollapse">
+  <button id="sidebarCollapse" type="button" class="btn btn-light  rounded-pill shadow-sm px-4 "><i  class="fa fa-bars mr-2 toggleicon"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
+</div>
+  <!-- Demo content -->
+  <h2 class="display-5 " style="margin-bottom: .9rem;">History Table</h2>
+  <main class="table" id="customers_table">
+    <section class="table__header">
+
+        <div class="input-group">
+            <input type="search" placeholder="Search Data...">
+            <img src="images/search.png" alt="">
+        </div>
+        <div class="export__file">
+            <label for="export-file" class="export__file-btn" title="Export File"></label>
+            <input type="checkbox" id="export-file">
+            <div class="export__file-options">
+                <label>Export As &nbsp; &#10140;</label>
+                <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+            </div>
+        </div>
+    </section>
+    <section class="table__body">
+        <table>
+            <thead>
+                <tr>
+                    <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Customer <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Location <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Order Date <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Amount <span class="icon-arrow">&UpArrow;</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                    <td> Seoul </td>
+                    <td> 17 Dec, 2022 </td>
+                    <td>
+                        <p class="status delivered">Delivered</p>
+                    </td>
+                    <td> <strong> $128.90 </strong></td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td><img src="images/Jeet Saru.png" alt=""> Jeet Saru </td>
+                    <td> Kathmandu </td>
+                    <td> 27 Aug, 2023 </td>
+                    <td>
+                        <p class="status cancelled">Cancelled</p>
+                    </td>
+                    <td> <strong>$5350.50</strong> </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td><img src="images/Sonal Gharti.jpg" alt=""> Sonal Gharti </td>
+                    <td> Tokyo </td>
+                    <td> 14 Mar, 2023 </td>
+                    <td>
+                        <p class="status shipped">Shipped</p>
+                    </td>
+                    <td> <strong>$210.40</strong> </td>
+                </tr>
+                <tr>
+                    <td> 4</td>
+                    <td><img src="images/Alson GC.jpg" alt=""> Alson GC </td>
+                    <td> New Delhi </td>
+                    <td> 25 May, 2023 </td>
+                    <td>
+                        <p class="status delivered">Delivered</p>
+                    </td>
+                    <td> <strong>$149.70</strong> </td>
+                </tr>
+                <tr>
+                    <td> 5</td>
+                    <td><img src="images/Sarita Limbu.jpg" alt=""> Sarita Limbu </td>
+                    <td> Paris </td>
+                    <td> 23 Apr, 2023 </td>
+                    <td>
+                        <p class="status pending">Pending</p>
+                    </td>
+                    <td> <strong>$399.99</strong> </td>
+                </tr>
+                <tr>
+                    <td> 6</td>
+                    <td><img src="images/Alex Gonley.jpg" alt=""> Alex Gonley </td>
+                    <td> London </td>
+                    <td> 23 Apr, 2023 </td>
+                    <td>
+                        <p class="status cancelled">Cancelled</p>
+                    </td>
+                    <td> <strong>$399.99</strong> </td>
+                </tr>
+                <tr>
+                    <td> 7</td>
+                    <td><img src="images/Alson GC.jpg" alt=""> Jeet Saru </td>
+                    <td> New York </td>
+                    <td> 20 May, 2023 </td>
+                    <td>
+                        <p class="status delivered">Delivered</p>
+                    </td>
+                    <td> <strong>$399.99</strong> </td>
+                </tr>
+                <tr>
+                    <td> 8</td>
+                    <td><img src="images/Sarita Limbu.jpg" alt=""> Aayat Ali Khan </td>
+                    <td> Islamabad </td>
+                    <td> 30 Feb, 2023 </td>
+                    <td>
+                        <p class="status pending">Pending</p>
+                    </td>
+                    <td> <strong>$149.70</strong> </td>
+                </tr>
+                <tr>
+                    <td> 9</td>
+                    <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
+                    <td> Dhaka </td>
+                    <td> 22 Dec, 2023 </td>
+                    <td>
+                        <p class="status cancelled">Cancelled</p>
+                    </td>
+                    <td> <strong>$249.99</strong> </td>
+                </tr>
+                <tr>
+                    <td> 9</td>
+                    <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
+                    <td> Dhaka </td>
+                    <td> 22 Dec, 2023 </td>
+                    <td>
+                        <p class="status cancelled">Cancelled</p>
+                    </td>
+                    <td> <strong>$249.99</strong> </td>
+                </tr>
+                <tr>
+                    <td> 9</td>
+                    <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
+                    <td> Dhaka </td>
+                    <td> 22 Dec, 2023 </td>
+                    <td>
+                        <p class="status cancelled">Cancelled</p>
+                    </td>
+                    <td> <strong>$249.99</strong> </td>
+                </tr>
+                <tr>
+                    <td> 9</td>
+                    <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
+                    <td> Dhaka </td>
+                    <td> 22 Dec, 2023 </td>
+                    <td>
+                        <p class="status cancelled">Cancelled</p>
+                    </td>
+                    <td> <strong>$249.99</strong> </td>
+                </tr>
+                <tr>
+                    <td> 9</td>
+                    <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
+                    <td> Dhaka </td>
+                    <td> 22 Dec, 2023 </td>
+                    <td>
+                        <p class="status cancelled">Cancelled</p>
+                    </td>
+                    <td> <strong>$249.99</strong> </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+</div>
+<!-- End demo content -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
