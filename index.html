@@ -107,79 +107,57 @@
     <form action="#">
         <div class="form first">
             <div class="details personal">
-                <span class="title">Personal Details</span>
+                <span class="title">Booking Details</span>
 
                 <div class="fields">
                     <div class="input-field">
-                        <label>Full Name</label>
-                        <input type="text" placeholder="Enter your name" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Date of Birth</label>
-                        <input type="date" placeholder="Enter birth date" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Email</label>
-                        <input type="text" placeholder="Enter your email" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Mobile Number</label>
-                        <input type="number" placeholder="Enter mobile number" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Gender</label>
+                        <label>Seminar Hall</label>
                         <select required>
-                            <option disabled selected>Select gender</option>
-                            <option>Male</option>
-                            <option>Female</option>
-                            <option>Others</option>
+                            <option disabled hidden  selected>Select Seminar Hall</option>
+                            <option>Big Seminar Hall</option>
+                            <option>Mech Seminar Hall</option>
+                            <option>EEE Seminar Hall</option>
+                            <option>ECE Seminar Hall</option>
+                            <option>CSE Seminar Hall</option>
+                            <option>Civil Seminar Hall</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label>Academic Year</label>
+                        <select required>
+                            <option disabled hidden  selected>Select Academic Year</option>
+                            <option>2023-2024</option>
+                            <option>2024-2025</option>
+                            <option>2025-2026</option>
+                            <option>2026-2027</option>
+                            <option>2027-2028</option>
+                            <option>2028-2029</option>
                         </select>
                     </div>
 
                     <div class="input-field">
-                        <label>Occupation</label>
-                        <input type="text" placeholder="Enter your ccupation" required>
-                    </div>
-                </div>
-            </div>
-
-            <div class="details ID">
-                <span class="title">Identity Details</span>
-
-                <div class="fields">
-                    <div class="input-field">
-                        <label>ID Type</label>
-                        <input type="text" placeholder="Enter ID type" required>
+                        <label>From Date</label>
+                        <input type="date" placeholder="Enter From date" required>
                     </div>
 
                     <div class="input-field">
-                        <label>ID Number</label>
-                        <input type="number" placeholder="Enter ID number" required>
+                        <label>To Date</label>
+                        <input type="date" placeholder="Enter TO date" required>
+                    </div>
+                    <div class="input-field">
+                        <label>Session</label>
+                        <select required>
+                            <option disabled hidden selected>Select Session</option>
+                            <option>FN</option>
+                            <option>AN</option>
+                            <option>FULL</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label>Event Name</label>
+                        <input type="text" placeholder="Enter Event Name" required>
                     </div>
 
-                    <div class="input-field">
-                        <label>Issued Authority</label>
-                        <input type="text" placeholder="Enter issued authority" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Issued State</label>
-                        <input type="text" placeholder="Enter issued state" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Issued Date</label>
-                        <input type="date" placeholder="Enter your issued date" required>
-                    </div>
-
-                    <div class="input-field">
-                        <label>Expiry Date</label>
-                        <input type="date" placeholder="Enter expiry date" required>
-                    </div>
                 </div>
 
                 <button class="nextBtn">

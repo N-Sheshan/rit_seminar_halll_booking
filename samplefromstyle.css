@@ -71,7 +71,7 @@ form.secActive .form.first{
 .container form .fields{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 form .fields .input-field,form .fields .availability-input-field{
@@ -89,6 +89,7 @@ form .fields .input-field{
     font-size: 1rem;
     /* font-weight: 500; */
     color: #2e2e2e;
+    margin-left: 8.5px;
 }
 .input-field input,
 .input-field select,
@@ -103,7 +104,7 @@ form .fields .input-field{
     border: 1px solid #aaa;
     padding: 0 15px;
     height: 42px;
-    margin: 8px 0;
+    margin: 8px;
 }
 
 .input-field input :focus,
